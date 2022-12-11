@@ -38,8 +38,7 @@
 
         echo"</table>";
         echo "</form>";
-        $new = $_POST["Test"];
-        echo $new; 
+        $new = $_POST["Test"]; 
         if(!empty($new)){
             $UpdateADD = "UPDATE `Getränke` SET `Anzahl`= Anzahl+1 WHERE `NR` LIKE $new;";
             mysqli_query($verbindung,$UpdateADD);
